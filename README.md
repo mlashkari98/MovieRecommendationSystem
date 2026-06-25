@@ -38,7 +38,7 @@ Farmers, merchants, and unemployed individuals had the lowest participation in t
 
 <img width="712" height="352" alt="plot2" src="https://github.com/user-attachments/assets/78f41307-6596-4c26-9d92-647f2f26c710" />
 
-<img width="1099" height="773" alt="plot3" src="https://github.com/user-attachments/assets/16ccba50-52d9-440a-ac2a-464b9b4de275" />
+<img width="549.5" height="386.5" alt="plot3" src="https://github.com/user-attachments/assets/16ccba50-52d9-440a-ac2a-464b9b4de275" />
 
 <img width="891" height="604" alt="plot4" src="https://github.com/user-attachments/assets/f8d1b80d-6561-40d5-b76d-c182a28ac725" />
 
