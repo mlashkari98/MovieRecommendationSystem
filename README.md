@@ -59,6 +59,6 @@ Among previous works on the MovieLens-1M dataset, matrix completion methods have
 
 * We design KGAT based on Graph Attention Networks (GAT) instead of Graph Convolutional Networks (GCN) for learning from the knowledge graph. In attention-based graph neural networks, the model is able to learn the relative importance of neighboring nodes by assigning different weights to them.
 
-* In [1], the model is allowed to learn the initial user features and construct a representation for each user from random input embeddings. In contrast, we utilize user metadata and construct initial feature vectors for each user based on the available user information.
+*  The KGCN model is allowed to learn the initial user features and construct a representation for each user from random input embeddings [1]. Instead, We utilize user metadata and construct initial feature vectors for each user based on the available user information.
 
 
