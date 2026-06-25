@@ -55,7 +55,7 @@ The knowlege graph items are provided in the form of (movie_id, relation, movie_
 
 ## Related Work and Our Contribution
 
-Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [3,4,5]. In [5], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [2,3]. The error of the model [6] reports a model error of `0.833` on the MovieLens-1M dataset which indicates that the model is not approprate for contributation. Therefore, We use the model introduced in [2], called KGCN as the foundation of our work. They trained the KGCN model on knowledge graphs for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
+Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [3,4,5]. In [5], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [1,6]. The error of the model [6] reports a model error of `0.833` on the MovieLens-1M dataset which indicates that the model is not approprate for contributation. Therefore, We use the model introduced in [1], called KGCN as the foundation of our work. They trained the KGCN model on knowledge graphs for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
 
 * We design KGAT based on Graph Attention Networks (GAT) instead of Graph Convolutional Networks (GCN) for learning from the knowledge graph. In attention-based graph neural networks, the model is able to learn the relative importance of neighboring nodes by assigning different weights to them.
 
@@ -63,9 +63,9 @@ Among previous works on the MovieLens-1M dataset, matrix completion methods have
 
 ## References
 
-[1] Harper, F. Maxwell, and Joseph A. Konstan. "The movielens datasets: History and context." Acm transactions on interactive intelligent systems. 2015.
+[1] Wang, Hongwei, et al. "Knowledge graph convolutional networks for recommender systems." The world wide web conference. 2019. The knowledge graph is available at https://github.com/zzaebok/KGCN-pytorch 
 
-[2] Wang, Hongwei, et al. "Knowledge graph convolutional networks for recommender systems." The world wide web conference. 2019. The knowledge graph is available at https://github.com/zzaebok/KGCN-pytorch 
+[2] Harper, F. Maxwell, and Joseph A. Konstan. "The movielens datasets: History and context." Acm transactions on interactive intelligent systems. 2015.
 
 [3] Han, Soyeon Caren, et al. "Glocal-k: Global and local kernels for recommender systems." Proceedings of the 30th ACM International Conference on Information & Knowledge Management. 2021.
 
