@@ -34,5 +34,14 @@ The occupation identifiers are defined as follows:
 
 Farmers, merchants, and unemployed individuals had the lowest participation in the surveys, while students, managers, and engineers had the highest participation.
 
+<img width="407" height="278" alt="plot1" src="https://github.com/user-attachments/assets/14651562-c2fa-46c1-bbd3-c6e4cc84b124" />
+
+<img width="712" height="352" alt="plot2" src="https://github.com/user-attachments/assets/78f41307-6596-4c26-9d92-647f2f26c710" />
+
+<img width="1099" height="773" alt="plot3" src="https://github.com/user-attachments/assets/16ccba50-52d9-440a-ac2a-464b9b4de275" />
+
+<img width="891" height="604" alt="plot4" src="https://github.com/user-attachments/assets/f8d1b80d-6561-40d5-b76d-c182a28ac725" />
+
+<img width="2612" height="1679" alt="plot5" src="https://github.com/user-attachments/assets/328170b7-c515-4db4-931a-f49b3d580ddd" />
 
 
