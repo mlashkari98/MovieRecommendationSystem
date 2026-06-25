@@ -64,9 +64,14 @@ Among previous works on the MovieLens-1M dataset, matrix completion methods have
 ## References
 
 [1] Harper, F. Maxwell, and Joseph A. Konstan. "The movielens datasets: History and context." Acm transactions on interactive intelligent systems. 2015.
+
 [2] Wang, Hongwei, et al. "Knowledge graph convolutional networks for recommender systems." The world wide web conference. 2019. The knowledge graph is available at https://github.com/zzaebok/KGCN-pytorch 
+
 [3] Han, Soyeon Caren, et al. "Glocal-k: Global and local kernels for recommender systems." Proceedings of the 30th ACM International Conference on Information & Knowledge Management. 2021.
+
 [4] Shen, Wei, et al. "Inductive matrix completion using graph autoencoder." Proceedings of the 30th ACM International Conference on Information & Knowledge Management. 2021.
+
 [5] Zhang, Muhan, and Yixin Chen. "Inductive matrix completion based on graph neural networks." arXiv preprint arXiv:1904.12058 (2019).
+
 [6] Darban, Zahra Zamanzadeh, and Mohammad Hadi Valipour. "GHRS: Graph-based hybrid recommendation system with application to movie recommendation." Expert Systems with Applications. 2022.
 
