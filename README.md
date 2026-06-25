@@ -1,7 +1,7 @@
 # Movie Recommandation System
 ## Motivation
 
-Recommendation systems can be designed in two forms: **collaborative filtering** and **content-based filtering**. When knowledge graphs are used alongside user ratings, the system is designed as a **hybrid** recommender system.  We use a pre-constructed knowledge graph [1] includes relationships for movies such as the **country of production**, **movie soundtrack**, and **director**. We design a movie recommendation system based on the aformentioned knowledge graph and the MovieLens dataset which provides user information, using the **Graph Attention Network (GAT)** neural architecture.
+Recommendation systems can be designed in two forms: **collaborative filtering** and **content-based filtering**. When knowledge graphs are used alongside user ratings, the system is designed as a **hybrid** recommender system.  We use a pre-constructed knowledge graph [1] includes relationships for movies such as the **country of production**, **movie soundtrack**, and **director**. We design a movie recommendation system based on the aformentioned knowledge graph and the MovieLens dataset [2] which provides user information, using the **Graph Attention Network (GAT)** neural architecture.
 
 ## Data Analysis
 In the MovieLens-1M dataset, the numbers of users, movies, and user ratings for movies are 6,040, 3,952, and 1,000,210, respectively. User attributes include gender, age, occupation, and ZIP code. We use all of these attributes except the ZIP code for training the models.
@@ -55,10 +55,18 @@ The knowlege graph items are provided in the form of (movie_id, relation, movie_
 
 ## Related Work and Our Contribution
 
-Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [2,3,4]. In [4], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [1,5]. The error of the model [5] reports a model error of `0.833` on the MovieLens-1M dataset which indicates that the model is not approprate for contributation. Therefore, We use the model introduced in [1], called KGCN as the foundation of our work. They trained the KGCN model on knowledge graphs for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
+Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [3,4,5]. In [5], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [2,3]. The error of the model [6] reports a model error of `0.833` on the MovieLens-1M dataset which indicates that the model is not approprate for contributation. Therefore, We use the model introduced in [2], called KGCN as the foundation of our work. They trained the KGCN model on knowledge graphs for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
 
 * We design KGAT based on Graph Attention Networks (GAT) instead of Graph Convolutional Networks (GCN) for learning from the knowledge graph. In attention-based graph neural networks, the model is able to learn the relative importance of neighboring nodes by assigning different weights to them.
 
-*  The KGCN model is allowed to learn the initial user features and construct a representation for each user from random input embeddings [1]. Instead, We utilize user metadata and construct initial feature vectors for each user based on the available user information.
+*  The KGCN model is allowed to learn the initial user features and construct a representation for each user from random input embeddings [2]. Instead, We utilize user metadata and construct initial feature vectors for each user based on the available user information.
 
+## References
+
+[1] Harper, F. Maxwell, and Joseph A. Konstan. "The movielens datasets: History and context." Acm transactions on interactive intelligent systems. 2015.
+[2] Wang, Hongwei, et al. "Knowledge graph convolutional networks for recommender systems." The world wide web conference. 2019. The knowledge graph is available at https://github.com/zzaebok/KGCN-pytorch 
+[3] Han, Soyeon Caren, et al. "Glocal-k: Global and local kernels for recommender systems." Proceedings of the 30th ACM International Conference on Information & Knowledge Management. 2021.
+[4] Shen, Wei, et al. "Inductive matrix completion using graph autoencoder." Proceedings of the 30th ACM International Conference on Information & Knowledge Management. 2021.
+[5] Zhang, Muhan, and Yixin Chen. "Inductive matrix completion based on graph neural networks." arXiv preprint arXiv:1904.12058 (2019).
+[6] Darban, Zahra Zamanzadeh, and Mohammad Hadi Valipour. "GHRS: Graph-based hybrid recommendation system with application to movie recommendation." Expert Systems with Applications. 2022.
 
