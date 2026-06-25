@@ -42,6 +42,15 @@ Farmers, merchants, and unemployed individuals had the lowest participation in t
 
 <img width="891" height="604" alt="plot4" src="https://github.com/user-attachments/assets/f8d1b80d-6561-40d5-b76d-c182a28ac725" />
 
+### Knowlege Graph sampled items
+The knowlege graph items are provided in the form of (movie_id, relation, movie_id). Here are a few examples:
+```
+11904 film.film.producer 16954
+348 film.film.actor 16955
+13598 film.film.costume_designer 16956
+9098 film.film.actor 16957
+```
+
 <img width="2612" height="1679" alt="plot5" src="https://github.com/user-attachments/assets/328170b7-c515-4db4-931a-f49b3d580ddd" />
 
 
