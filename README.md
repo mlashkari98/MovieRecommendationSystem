@@ -55,11 +55,11 @@ The knowlege graph items are provided in the form of (movie_id, relation, movie_
 
 ## Related Work and Our Contribution
 
-Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [3,4,5]. In [5], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [1,6]. According to my study, The error of the model proposed in [6] is higher than the proposed model in [1], called KGCN. Therefore, We use KGCN for our contribution to make an improvement. They trained the KGCN model on knowledge graphs for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
+Among previous works on the MovieLens-1M dataset, matrix completion methods have achieved strong performance [3,4,5]. In [5], graph neural networks were used for matrix completion. Another category of models relies only on graph neural networks and attempts to design a hybrid recommendation system [1,6]. According to my study, The error of the model proposed in [6] is higher than the proposed model in [1], called KGCN. Therefore, We use KGCN for our contribution to make an improvement. They trained the KGCN model on knowledge graphs provided for the MovieLens-20M dataset. So, We filtered the knowledge graph to be compatible with the MovieLens-1M dataset. We make two contributions:
 
 * We design KGAT based on Graph Attention Networks (GAT) instead of Graph Convolutional Networks (GCN) for learning from the knowledge graph. In attention-based graph neural networks, the model is able to learn the relative importance of neighboring nodes by assigning different weights to them.
 
-*  The KGCN model is allowed to learn the initial user features and construct a representation for each user from random input embeddings [2]. Instead, We utilize user metadata and construct initial feature vectors for each user based on the available user information.
+* The KGCN model is allowed to learn the initial user features and construct a representation for each user from random input embeddings [2]. Instead, We utilize user metadata and construct initial feature vectors for each user based on the available user information.
 
 ## References
 
