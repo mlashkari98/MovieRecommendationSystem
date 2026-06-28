@@ -1,7 +1,7 @@
 # Movie Recommandation System
 ## Motivation
 
-Recommendation systems can be designed in two forms: **collaborative filtering** and **content-based filtering**. When knowledge graphs are used alongside user ratings, the system is designed as a **hybrid** recommender system.  We use a pre-constructed knowledge graph [1] includes relationships for movies such as the **country of production**, **movie soundtrack**, and **director**. I design a movie recommendation system based on the aformentioned knowledge graph and the MovieLens dataset [2] which provides user information, using the **Graph Attention Network (GAT)** neural architecture.
+Movie Recommendation systems can be designed in two forms: **collaborative filtering** and **content-based filtering**. When knowledge graphs are used alongside user ratings, the system is designed as a **hybrid** recommender system.  We use a pre-constructed knowledge graph [1] includes relationships for movies such as the **country of production**, **movie soundtrack**, and **director**. I design a movie recommendation system based on the aformentioned knowledge graph and the MovieLens dataset [2] which provides user information, using the **Graph Attention Network (GAT)** neural architecture.
 
 ## Data Analysis
 In the MovieLens-1M dataset, the numbers of users, movies, and user ratings for movies are 6,040, 3,952, and 1,000,210, respectively. User attributes include gender, age, occupation, and ZIP code. We use all of these attributes except the ZIP code for training the models.
